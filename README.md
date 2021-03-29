@@ -20,13 +20,13 @@ Download the pre-trained models on SST-2 and CoLA [here](https://drive.google.co
     - checkpoint: `models/cola/model.ckpt-801`
 
 ### Build interaction trees on NLP tasks
-- To build interaction trees on some examples, you can run
+1. To build interaction trees on some examples, you can run
 ```
 python main.py --task_name sst-2
 ```
 then results of the interaction tree for each sentence will be saved in folder `binary_trees`.
 
-- To visualize the extracted interaction tree structure, you should run
+2. To visualize the extracted interaction tree structure, you should run
 ```
 python draw_tree.py
 ```
@@ -37,13 +37,13 @@ and the pictures of tree structures will be saved in folder `draw_trees`.
 To evaluate the correctness of the extracted interactions, we construct a dataset with
  ground-truth interactions between the inputs. Each example only contains AND operations and OR operations.
 
-- To compute interactions among input variables in the ANDOR dataset you can run
+1. To compute interactions among input variables in the ANDOR dataset you can run
 ```
 cd ANDOR
 python toy_main.py
 ```
 
-- Then you can compute the **F1-socre** and **Recall** between the extracted interactions and their ground-truths:
+2. Then you can compute the **F1-socre** and **Recall** between the extracted interactions and their ground-truths:
 ```
 python compute_distance.py
 ```
