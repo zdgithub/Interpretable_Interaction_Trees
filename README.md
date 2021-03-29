@@ -1,4 +1,4 @@
-# Building Interpretable Interaction Trees for Deep NLP Models
+## Building Interpretable Interaction Trees for Deep NLP Models
 Official implementation for the paper [Building Interpretable Interaction Trees for Deep NLP Models](https://arxiv.org/abs/2007.04298) (AAAI 2021).
 
 ## Requirements
