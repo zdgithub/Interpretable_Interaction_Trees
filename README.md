@@ -10,14 +10,14 @@ Official implementation for the paper [Building Interpretable Interaction Trees 
 - graphviz==0.8.4
 
 ### Models
-These models are finetuned based on the [BERT](https://github.com/google-research/bert) model.
-- CoLA: 
-    - eval_accuracy: 82.26%
-    - checkpoint: `models/cola/model.ckpt-801`
-
+Download the pre-trained models on SST-2 and CoLA [here](https://drive.google.com/drive/folders/1t0TNRLy2RlN7igqZxFIY5ZbmPqbZ-sDl?usp=sharing).
 - SST-2: 
     - eval_accuracy: 92.32%
     - checkpoint: `models/sst-2/model.ckpt-6313`
+
+- CoLA: 
+    - eval_accuracy: 82.26%
+    - checkpoint: `models/cola/model.ckpt-801`
 
 ### Build interaction trees on NLP tasks
 - To build interaction trees on some examples, you can run
