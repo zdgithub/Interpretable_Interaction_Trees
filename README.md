@@ -1,7 +1,7 @@
-## Building Interpretable Interaction Trees for Deep NLP Models
+# Building Interpretable Interaction Trees for Deep NLP Models
 Official implementation for the paper [Building Interpretable Interaction Trees for Deep NLP Models](https://arxiv.org/abs/2007.04298) (AAAI 2021).
 
-### Requirements
+## Requirements
 - python 3.6
 - nltk
 - tensorflow-gpu==1.14.0
@@ -9,7 +9,7 @@ Official implementation for the paper [Building Interpretable Interaction Trees 
 - anytree==2.8.0
 - graphviz==0.8.4
 
-### Models
+## Models
 Download the pre-trained models on SST-2 and CoLA [here](https://drive.google.com/drive/folders/1t0TNRLy2RlN7igqZxFIY5ZbmPqbZ-sDl?usp=sharing).
 - SST-2: 
     - eval_accuracy: 92.32%
@@ -19,7 +19,7 @@ Download the pre-trained models on SST-2 and CoLA [here](https://drive.google.co
     - eval_accuracy: 82.26%
     - checkpoint: `models/cola/model.ckpt-801`
 
-### Build interaction trees on NLP tasks
+## Build interaction trees on NLP tasks
 1. To build interaction trees on some examples, you can run
 ```
 python main.py --task_name sst-2
@@ -33,7 +33,7 @@ python draw_tree.py
 and the pictures of tree structures will be saved in folder `draw_trees`.
 
 
-### Toy Task - ANDOR
+## Toy Task - ANDOR
 To evaluate the correctness of the extracted interactions, we construct a dataset with
  ground-truth interactions between the inputs. Each example only contains AND operations and OR operations.
 
@@ -49,7 +49,7 @@ python compute_distance.py
 ```
 
 
-### Citation
+## Citation
 If you find our work useful for your research, please cite the following paper:
 ```
 @inproceedings{zhang2021building,
